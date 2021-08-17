@@ -1,0 +1,187 @@
+.toDo{
+    box-sizing: border-box;
+    padding:0;
+    display:flex;
+justify-content: center;
+align-items: center;
+vertical-align: middle;
+background-color:rgb(247, 247, 247);
+
+}
+.foDoboz2{
+    border: 4px solid white;
+    margin: 30px;
+    width: 100%;
+    min-height: 500px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    overflow-x: auto;
+}
+.foDoboz2 h1{
+    margin: 10px 1px;
+    padding: 5px;
+    border: 4px solid white;
+}
+.listaDiv{
+    width: 70%;
+}
+.gombToDo{
+ background-color: rgb(0, 0, 0);
+ color: rgb(255, 255, 255);
+ border: none;
+ margin: 1rem;
+ padding: 20px;
+ border-radius: 5px;
+
+}
+.gombToDo:hover{
+    background-color: rgb(63, 59, 59);
+    color: white;
+}
+.feladat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hatarido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: stretch;
+    align-items:center;
+    list-style: none;
+
+}
+li{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 1em;
+    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.226);
+    border:4px solid rgb(255, 255, 255);
+}
+
+.gombok{
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    align-items: stretch;
+    
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.gomb2,.gomb3{
+    margin: 10px;
+}
+.gomb2{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin: 1rem;
+    padding: 20px;
+    border-radius: 5px;
+}
+.gomb2:hover{
+    background-color: rgb(110, 29, 15);
+}
+.gomb3{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin: 1rem;
+    padding: 20px;
+    border-radius: 5px;
+}
+.gomb3:hover{
+    background-color: rgb(204, 202, 202);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.6s, opacity 0.6s linear;
+  }
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
+  .szunet{
+      visibility: hidden;
+  }
+  .szunetVis{
+      visibility: visible;
+      text-align: center;
+      color: red;
+  }
+  .hatralevo{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      padding: 5px;
+  }
+
+  @media only screen and (max-device-width: 600px){
+      .hatralevo{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          background-color: brown;
+      }
+      .gombok{
+          display:block;
+      }
+    .gomb2{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+    }
+    .gomb3{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+    }
+    li{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+        border-radius: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 1em;
+        box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.226);
+        border:4px solid rgb(255, 255, 255);
+    }
+    .hatralevo{
+        display:block;
+      align-items: center;
+      border: 1px solid black;
+      text-align: center;
+  }
+  }
